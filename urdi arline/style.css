@@ -15,23 +15,28 @@
   --cor5:#B9A533;
 }
 body{
+  background-attachment: fixed;
+  background-image: url('imagens/logo.png');
+  background-position: center;
+  margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   text-align: justify;
 }
 header {
-  height: 60px;
-  border-radius: 5px 5px 0px 5px;
-  /*background-image: linear-gradient(to right, var(--cor3), var(--cor4), var(--cor3), var(--cor4), var(--cor3),var(--cor2), var(--cor1));*/
-  background-image:linear-gradient(to right, var(--corA) , var(--corB));
+  height: 90px;
+  width: 100vw;
+  margin-top: -8px;
+  background-image: url('imagens/1998.jpg');
+  background-position: left center;
   display: flex;
   justify-content: left;
   align-items: center;
-
-  background-color: darkblue;
 }
-header img {
-  margin-right: 98px;
+header > img.logo {
+  height: 100px;
+  width: 100px;
+
 }
 header h1 {
   font-weight: normal;
@@ -57,9 +62,11 @@ strong#urdi:hover {
   transform: translate(50px, -200px);
   color: transparent;
 }
-img {
-  width: 200px;
+img.corpo {
+  width: 100vw;
+  height: 200px;
 }
 main{
-  max-width: 1000px;
+  padding: 20px;
+  max-width: 980px;
 }
