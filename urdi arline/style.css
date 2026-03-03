@@ -22,20 +22,38 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   font-weight: normal;
   text-align: justify;
+  
+}
+nav {
+  margin: auto;
+}
+nav a {
+  text-decoration: none;
+
+  
+}
+nav a:hover {
+  padding: 5px;
+  text-decoration: underline;
+  max-width: 400px;
+  background-color: var(--corA);
+  text-align: center;
+  
 }
 header {
-  height: auto;
-  width: 100vw;
-  margin-top: -8px;
+  height: 150px;
+  margin-top: -5px;
   background-image: url('imagens/1998.jpg');
   background-position: left center;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: left;
   align-items: center;
 }
-header > img {
-  height: 10px;
-  width: 10px;
+header img {
+  margin-right: 100px;
+  height: 100px;
+  width: 100px;
 
 }
 header h1 {
@@ -45,6 +63,7 @@ header h1 {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 40px;
+  justify-content: right;
 }
 
 strong#urdi {
@@ -62,11 +81,34 @@ strong#urdi:hover {
   transform: translate(50px, -200px);
   color: transparent;
 }
-img.corpo {
-  width: 100vw;
-  height: 200px;
-}
+
 main{
+  margin-top: 10px;
+  margin: auto;
   padding: 20px;
   max-width: 980px;
+  box-shadow: 8px 11px 20px 0px #00000085;
 }
+div#pai {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+#texto-image{
+  max-width: 400px;
+  text-align: justify;
+  margin-right: 50px;
+}
+img{
+  min-width: 300px;
+  max-width: 300px;
+}
+
+footer{
+  background-color: var(--corA);
+  text-align: center;
+  color: white;
+}
+
