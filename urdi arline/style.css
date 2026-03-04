@@ -133,6 +133,16 @@ div#imagen{
   max-width: 980px;
 
 }
+div#embarque {
+  margin-bottom: 10px;
+  background-color: #053353;
+  background-image: url('imagens/embarque.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  max-width: 980px;
+
+}
 div#frota-nova {
   margin-bottom: 10px;
   background-color: #053353;
