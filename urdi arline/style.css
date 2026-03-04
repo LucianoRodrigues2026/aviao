@@ -3,6 +3,9 @@
   font-family: urdi;
   src: url('/font/urdi.otf');
 }
+*{
+  margin: 0;
+}
 :root{
   --cor: #cc8105;
   --corA: #053353;
@@ -84,13 +87,14 @@ header img {
 
 }
 
-strong#urdi {
+span#urdi {
+  background-color: #0964a4;
   display: inline-block;
   position: relative;
   transition: 1s;
   cursor: pointer;
 }
-strong#urdi:hover {
+span#urdi:hover {
   background-size: cover;
   background-image: url('imagens/urdi2.png');
   width: 200px;
@@ -99,9 +103,14 @@ strong#urdi:hover {
   transform: translate(50px, -200px);
   color: transparent;
 }
+body h1, h2, h3, h4, strong {
+  color: var(--corA);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 
 main{
-  margin-top: -5px;
+  margin-top: 0;
   margin: 20px auto;
   padding: 20px;
   max-width: 980px;
@@ -109,21 +118,30 @@ main{
   
 
 }
-div#pai {
-  background-color: aliceblue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+main p{
+  line-height: 28px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-indent: 30px;
 }
-#texto-image{
-  max-width: 400px;
-  text-align: justify;
-  margin-right: 50px;
+div#imagen{ 
+  background-color: #053353;
+  background-image: url('imagens/1998.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  max-width: 980px;
+
 }
-img{
-  min-width: 300px;
-  max-width: 300px;
+div#frota-nova {
+  margin-bottom: 10px;
+  background-color: #053353;
+  background-image: url('imagens/novoavião.jpg');
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  max-width: 980px;
+
 }
 
 footer{
@@ -133,3 +151,11 @@ footer{
   color: white;
 }
 
+ul li{
+  margin-left: -39px;
+  list-style-position: inside;
+  padding: 10px 63px 10px 14px;
+  background-color: #63beff;
+  text-align: justify;
+  line-height: 28px;
+}
